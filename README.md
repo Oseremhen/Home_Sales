@@ -2,7 +2,8 @@
 
 <img width="746" alt="Screenshot 2023-04-09 at 1 19 42 PM" src="https://user-images.githubusercontent.com/106120403/230786958-dc308d09-858e-4058-8bb1-51f6434d8a44.png">
 
-I used SparkSQL to answer the following questions:
+I used SparkSQL to answer the following questions with the data on Home Sales:
+
 1. What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
 
 <img width="166" alt="Screenshot 2023-04-09 at 1 05 37 PM" src="https://user-images.githubusercontent.com/106120403/230786332-5bdaa9f1-b0f7-4630-b5c4-5fc0e3f422b5.png">
@@ -21,13 +22,17 @@ It took 0.2325 seconds to run this query.
 
 <img width="348" alt="Screenshot 2023-04-09 at 1 07 29 PM" src="https://user-images.githubusercontent.com/106120403/230786407-d4786b8d-d383-4c53-a990-191c64df9b72.png">
 
-I cached my data in a temporary data and used this cached data to run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+I cached my data in a temporary data and used this cached data to run the query that filters out the view ratings with an average price of greater than or equal to $350,000.
+
+5. Determine the runtime and compare it to uncached runtime.
 
 It took 0.1461 seconds to run this query. This took less than half the time to run compared to the uncached data above.
 
 <img width="348" alt="Screenshot 2023-04-09 at 1 10 39 PM" src="https://user-images.githubusercontent.com/106120403/230786541-4c20058a-f47b-4a6a-b3a1-ad9f109f92ab.png">
 
-I partitioned by the "date_built" field on the formatted parquet home sales data and created a temporary table for the parquet data to run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
+I partitioned by the "date_built" field on the formatted parquet home sales data and created a temporary table for the parquet data to run the query that filters out the view ratings with an average price of greater than or equal to $350,000.
+
+6. Determine the runtime and compare it to uncached runtime.
 
 It took 0.7188 seconds to run this query. This took less the time to run compared to the uncached data above but took longer than the data that was only cached and not partioned.
 
