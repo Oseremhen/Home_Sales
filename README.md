@@ -1,5 +1,7 @@
 # An analysis to determine key metrics about home sales data
 
+<img width="746" alt="Screenshot 2023-04-09 at 1 19 42 PM" src="https://user-images.githubusercontent.com/106120403/230786958-dc308d09-858e-4058-8bb1-51f6434d8a44.png">
+
 I used SparkSQL to answer the following questions:
 1. What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
 
@@ -21,7 +23,7 @@ It took 0.2325 seconds to run this query.
 
 I cached my data in a temporary data and used this cached data to run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
 
-It took 0.1461 seconds to run this query. This took half the time to run compared to the uncached data above.
+It took 0.1461 seconds to run this query. This took less than half the time to run compared to the uncached data above.
 
 <img width="348" alt="Screenshot 2023-04-09 at 1 10 39 PM" src="https://user-images.githubusercontent.com/106120403/230786541-4c20058a-f47b-4a6a-b3a1-ad9f109f92ab.png">
 
