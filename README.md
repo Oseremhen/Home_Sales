@@ -1,5 +1,7 @@
 # An analysis to determine key metrics about home sales data
 
+In this analysis, I used my knowledge of SparkSQL to determine key metrics about home sales data. Then I used Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
+
 <img width="746" alt="Screenshot 2023-04-09 at 1 19 42 PM" src="https://user-images.githubusercontent.com/106120403/230786958-dc308d09-858e-4058-8bb1-51f6434d8a44.png">
 
 I used SparkSQL to answer the following questions with the data on Home Sales:
